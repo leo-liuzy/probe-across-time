@@ -1,4 +1,3 @@
 # probe-across-time
-The total amount will be around 200G
 
-Figuring how to transfer to Google Drive from Google Cloud Storage.
+Released! Feel free to checkout our model [here](https://drive.google.com/drive/folders/1i7cNInCmiW07m_mfAmD3s4ZxcgJqiH6Y?usp=sharing).
