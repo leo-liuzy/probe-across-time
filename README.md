@@ -1,6 +1,6 @@
 # probe-across-time
 
-**Released!** Feel free to checkout our model [here]() (URL removed for double-blind review). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
+**Released!** Feel free to checkout our model [here](https://drive.google.com/drive/folders/1i7cNInCmiW07m_mfAmD3s4ZxcgJqiH6Y?usp=sharing). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
 
 ### Notes:
 * As an illustrative example, folder `NEWS(12GB)` denotes the checkpoints from pretraining RoBERTa-base on downsampled RealNews, see more details in the paper.
