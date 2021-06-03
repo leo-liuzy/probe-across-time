@@ -3,7 +3,7 @@
 **Released!** Feel free to checkout our model [here](https://drive.google.com/drive/folders/1i7cNInCmiW07m_mfAmD3s4ZxcgJqiH6Y?usp=sharing). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
 
 ### Notes:
-* Currently the link above points to Google Drive, and downloading from it might be slow; but this is the only free place I could store the models. I will look for better place to put the model.
+* Currently the link above points to Google Drive, and downloading from it might be very slow; but this is the only free place I could store the models. I will look for better place to put the model.
 * As an illustrative example, folder `NEWS(12GB)` denotes the checkpoints from pretraining RoBERTa-base on downsampled RealNews, see more details in the paper.
 * Within folders like, `NEWS(12GB)`, you will see `roberta_bz256_savesteps` or `roberta_bz256_saveepochs` or both; those names denote how the checkpoints (within those folders) are saved during prertaining **by epoch or step**. The name of a checkpoint folder is `checkpoint-xx`
 
