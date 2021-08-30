@@ -1,6 +1,14 @@
-# probe-across-time
+# Probing across time
 
-**Released!** Feel free to checkout our model [here](https://drive.google.com/drive/folders/1i7cNInCmiW07m_mfAmD3s4ZxcgJqiH6Y?usp=sharing). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
+**Released!** Feel free to checkout our model [here](https://arkdata.cs.washington.edu/probe-across-time/). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
+
+## Batched Download
+In each files under directory `checkpoint_paths`, we provide the paths to all `.tar` files. One could modify the files accordingly and download with commands like one below (For more options, see [here](https://stackoverflow.com/questions/13939038/how-do-you-run-a-command-for-each-line-of-a-file)).
+
+```bash
+xargs -n 1 -I{} wget https://arkdata.cs.washington.edu/probe-across-time/{} --no-check-certificate < <(cat path/to/modified/file)
+
+```
 
 ### Notes:
 * Currently the link above points to Google Drive, and downloading from it might be very slow; but this is the only free place I could store the models. I will look for better place to put the model.
