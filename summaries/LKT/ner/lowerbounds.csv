@@ -1,0 +1,2 @@
+scenario,aggregation_method,metric_name,metric
+glove,last,f1-measure-overall,0.5322

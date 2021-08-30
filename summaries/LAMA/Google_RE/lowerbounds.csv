@@ -1,0 +1,4 @@
+scenario,relation_type,metric_name,metric
+random,place_of_birth,P@ks_str,"{1: 0, 5: 0, 10: 0}"
+random,date_of_birth,P@ks_str,"{1: 0, 5: 0, 10: 0}"
+random,place_of_death,P@ks_str,"{1: 0, 5: 0, 10: 0}"

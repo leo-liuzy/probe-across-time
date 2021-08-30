@@ -1,0 +1,2 @@
+scenario,relation_type,metric_name,metric
+random,test,P@ks_str,"{1: 0, 5: 0, 10: 0}"

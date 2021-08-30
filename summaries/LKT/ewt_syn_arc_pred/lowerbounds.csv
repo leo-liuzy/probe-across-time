@@ -1,0 +1,2 @@
+scenario,aggregation_method,metric_name,metric
+glove,last,accuracy,0.739

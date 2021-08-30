@@ -1,0 +1,4 @@
+scenario,relation_type,metric_name,metric
+official roberta-base,place_of_birth,P@ks_str,"{1: 12.98, 5: 26.04, 10: 31.16}"
+official roberta-base,date_of_birth,P@ks_str,"{1: 1.79, 5: 7.54, 10: 14.25}"
+official roberta-base,place_of_death,P@ks_str,"{1: 1.23, 5: 2.16, 10: 2.62}"
