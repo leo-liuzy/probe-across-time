@@ -2,13 +2,15 @@
 
 **Released!** Feel free to checkout our model checkpoints [here](https://arkdata.cs.washington.edu/probe-across-time/). From our point of view, researchers might be more familiar with using `huggingface`, so those checkpoints were in huggingface format.
 
-## Batched Download
+## Batched Download (Total: 168GB)
 In each files under directory `checkpoint_paths`, we provide the paths to all `.tar` files. One could modify the files accordingly and download with commands like one below (For more options, see [here](https://stackoverflow.com/questions/13939038/how-do-you-run-a-command-for-each-line-of-a-file)).
 
 ```bash
 xargs -n 1 -I{} wget https://arkdata.cs.washington.edu/probe-across-time/{} --no-check-certificate < <(cat path/to/modified/file)
 
 ```
+
+
 
 ### Notes:
 * As an illustrative example, folder `NEWS` denotes the checkpoints from pretraining RoBERTa-base on downsampled RealNews, see more details in the paper.
