@@ -11,9 +11,8 @@ xargs -n 1 -I{} wget https://arkdata.cs.washington.edu/probe-across-time/{} --no
 ```
 
 ### Notes:
-* Currently the link above points to Google Drive, and downloading from it might be very slow; but this is the only free place I could store the models. I will look for better place to put the model.
-* As an illustrative example, folder `NEWS(12GB)` denotes the checkpoints from pretraining RoBERTa-base on downsampled RealNews, see more details in the paper.
-* Within folders like, `NEWS(12GB)`, you will see `roberta_bz256_savesteps` or `roberta_bz256_saveepochs` or both; those names denote how the checkpoints (within those folders) are saved during prertaining **by epoch or step**. The name of a checkpoint folder is `checkpoint-xx`
+* As an illustrative example, folder `NEWS` denotes the checkpoints from pretraining RoBERTa-base on downsampled RealNews, see more details in the paper.
+* Within folders like, `NEWS`, you will see `roberta_bz256_savesteps` or `roberta_bz256_saveepochs` or both; those names denote how the checkpoints (within those folders) are saved during prertaining **by epoch or step**. The name of a checkpoint folder is `checkpoint-xx`
 
 
 # Scripts included in this repo
