@@ -1,4 +1,4 @@
-checkpoint (in update steps),relation_type,metric_name,metric
+checkpoint (in update steps),metric_name,metric
 0,acc,0.34368530020703936
 10,acc,0.32298136645962733
 20,acc,0.32712215320910976

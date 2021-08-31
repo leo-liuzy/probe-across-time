@@ -52,10 +52,10 @@ for test in os.listdir(f"{summary_root}/{probe_name}"):
     table.loc[:, "metric"] = table.loc[:, "metric"].apply(lambda x: eval(x)[K])
     sub_table = table[table[chkpt_header].isin(CHECKPOINTS)]
     # sub_table.loc[:, "metric"] = sub_table.loc[:, "metric"].apply(lambda x: eval(x)[K])
-
     for relation_name, relation_sub_table in sub_table.groupby("relation_type"):
-
-        print()
+        ticks.append(f"{probe_name}-{test}-{relation_name}")
+        metrics = relation_sub_table['metric'].tolist()
+        data.append(metrics)
 # load CAT
 probe_name = "CAT"
 for test in os.listdir(f"{summary_root}/{probe_name}"):
@@ -68,6 +68,15 @@ for test in os.listdir(f"{summary_root}/{probe_name}"):
     metrics = table['metric'][table[chkpt_header].isin(CHECKPOINTS)].to_list()
     assert len(metrics) == len(CHECKPOINTS)
     data.append(metrics)
-print()
-# load Finetune
 
+# load Finetune
+for test in :
+    if not os.path.isdir(f"{summary_root}/{probe_name}/{test}"):
+        continue
+    tick = f"{probe_name}-{test}"
+    ticks.append(tick)
+    table = pandas.read_csv(f"{summary_root}/{probe_name}/{test}/{scenario}.csv", index_col=False)
+    table.sort_values(by=[chkpt_header], inplace=True)
+    metrics = table['metric'][table[chkpt_header].isin(CHECKPOINTS)].to_list()
+    assert len(metrics) == len(CHECKPOINTS)
+    data.append(metrics)
