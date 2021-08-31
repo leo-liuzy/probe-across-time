@@ -69,8 +69,21 @@ for test in os.listdir(f"{summary_root}/{probe_name}"):
     assert len(metrics) == len(CHECKPOINTS)
     data.append(metrics)
 
+# load oLMpics
+probe_name = "oLMpics"
+for test in os.listdir(f"{summary_root}/{probe_name}"):
+    if not os.path.isdir(f"{summary_root}/{probe_name}/{test}"):
+        continue
+    tick = f"{probe_name}-{test}"
+    ticks.append(tick)
+    table = pandas.read_csv(f"{summary_root}/{probe_name}/{test}/{scenario}.csv", index_col=False)
+    table.sort_values(by=[chkpt_header], inplace=True)
+    metrics = table['metric'][table[chkpt_header].isin(CHECKPOINTS)].to_list()
+    assert len(metrics) == len(CHECKPOINTS)
+    data.append(metrics)
+print()
 # load Finetune
-for test in :
+for test in ["CoLA", "MRPC", "SST-2", "WNLI", "WSC"]:
     if not os.path.isdir(f"{summary_root}/{probe_name}/{test}"):
         continue
     tick = f"{probe_name}-{test}"
